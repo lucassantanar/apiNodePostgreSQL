@@ -9,9 +9,9 @@ app.get("/", (req, res) => {
   const { Pool } = require("pg");
   const pool = new Pool({
     user: "postgres",
-    host: "192.168.0.153",
-    database: "boechat",
-    password: "juizladrao",
+    host: "localhost",
+    database: "neuromaster",
+    password: "juizladrao_1994",
     port: 5432,
   });
 
@@ -25,5 +25,5 @@ app.get("/", (req, res) => {
   ); 
 });
 
-app.listen(1483, () => console.log("Sevidor executando em: http://localhost:9000"));
+app.listen(1483, () => console.log("Sevidor executando em: http://localhost:1483"));
 
